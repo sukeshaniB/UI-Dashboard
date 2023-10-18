@@ -2,73 +2,67 @@ import React from "react";
 
 import { Icon } from "@chakra-ui/react";
 import {
-  MdBarChart,
-  MdPerson,
+  MdOutlineLiveHelp,
   MdHome,
-  MdLock,
-  MdOutlineShoppingCart,
+  MdProductionQuantityLimits,
 } from "react-icons/md";
-
+import {  FaMoneyCheckDollar } from "react-icons/fa6";
+import {  BsPersonSquare } from 'react-icons/bs'
+import { CiDiscount1 } from "react-icons/ci";
 // Admin Imports
 import MainDashboard from "views/admin/default";
-import NFTMarketplace from "views/admin/marketplace";
-import Profile from "views/admin/profile";
-import DataTables from "views/admin/dataTables";
-import RTL from "views/admin/rtl";
 
-// Auth Imports
-import SignInCentered from "views/auth/signIn";
 
 const routes = [
   {
-    name: "Main Dashboard",
+    name: "Dashboard ",
     layout: "/admin",
     path: "/default",
     icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
     component: MainDashboard,
   },
   {
-    name: "NFT Marketplace",
+    name: "Product",
     layout: "/admin",
     path: "/nft-marketplace",
     icon: (
       <Icon
-        as={MdOutlineShoppingCart}
+        as={MdProductionQuantityLimits}
         width='20px'
         height='20px'
         color='inherit'
       />
     ),
-    component: NFTMarketplace,
+    
     secondary: true,
   },
   {
-    name: "Data Tables",
+    name: "Customers",
     layout: "/admin",
-    icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
+    icon: <Icon as={BsPersonSquare} width='20px' height='20px' color='inherit' />,
     path: "/data-tables",
-    component: DataTables,
+    
   },
   {
-    name: "Profile",
+    name: "Income",
     layout: "/admin",
     path: "/profile",
-    icon: <Icon as={MdPerson} width='20px' height='20px' color='inherit' />,
-    component: Profile,
+    icon: <Icon as={FaMoneyCheckDollar} width='20px' height='20px' color='inherit' />,
+  
   },
   {
-    name: "Sign In",
-    layout: "/auth",
+    name: "Promote",
+    layout: "/admin",
     path: "/sign-in",
-    icon: <Icon as={MdLock} width='20px' height='20px' color='inherit' />,
-    component: SignInCentered,
+    icon: <Icon as={CiDiscount1} width='20px' height='20px' color='inherit' />,
+    
   },
   {
-    name: "RTL Admin",
-    layout: "/rtl",
+    name: "Help",
+    layout: "/admin",
     path: "/rtl-default",
-    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
-    component: RTL,
+    icon: <Icon as={MdOutlineLiveHelp} width='20px' height='20px' color='inherit' />,
+    
   },
 ];
 

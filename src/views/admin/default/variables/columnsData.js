@@ -18,19 +18,19 @@ export const columnsDataCheck = [
 ];
 export const columnsDataComplex = [
   {
-    Header: "NAME",
-    accessor: "name",
+    Header: "Product Name",
+    accessor: "product name",
   },
   {
-    Header: "STATUS",
-    accessor: "status",
+    Header: "Stock",
+    accessor: "stock",
   },
   {
-    Header: "DATE",
-    accessor: "date",
+    Header: "Price",
+    accessor: "price",
   },
   {
-    Header: "PROGRESS",
-    accessor: "progress",
+    Header: "Total Sales",
+    accessor: "total sales",
   },
 ];
